@@ -17,18 +17,41 @@ flowchart LR
     F --> G
     G --> H[JPEG и HLS]
     G --> I[История событий PostgreSQL]
-    H --> J[Qt или web клиент]
+    H --> J[JavaScript web-клиент]
     I --> J
 ```
 
-Система реализована в нескольких совместимых вариантах:
+Система включает несколько совместимых компонентов:
 
-- сервер C++20 без Qt;
+- самостоятельный сервер C++20;
 - сервер Python с тем же REST-контрактом;
-- серверная версия на Qt;
-- настольный Qt-клиент и web-клиент.
+- браузерный клиент, разработанный на JavaScript.
 
 Общий API и формат конфигурации позволяют использовать клиент с разными серверными реализациями.
+
+## Публичный стенд
+
+Все компоненты демонстрационного решения работают через публичный VPS [alex-video-analytics.ru](https://alex-video-analytics.ru/). Пользователь открывает JavaScript-клиент по HTTPS; тот же VPS предоставляет доступ к REST API и HLS-потоку и связывает клиентскую часть с сервером видеоаналитики.
+
+```mermaid
+flowchart LR
+    A[Браузер пользователя] -->|HTTPS| B[alex-video-analytics.ru]
+    B --> C[JavaScript-клиент]
+    B --> D[REST API]
+    B --> E[HLS-видеопоток]
+    D --> F[Сервер видеоаналитики]
+    E --> F
+```
+
+Доступ к защищённым функциям предоставляется администратором. Тестовые логины и пароли в публичной документации не публикуются.
+
+## Клиентская часть
+
+Клиентская часть полностью разработана на JavaScript и запускается в современном браузере. Она использует ES Modules, Fetch API и `async/await` для REST-запросов, HTML5 Canvas для отображения аналитической разметки и hls.js с Media Source Extensions для воспроизведения HLS. Pointer Events обеспечивают работу с областями анализа и PTZ-управлением, а ResizeObserver поддерживает корректное масштабирование интерфейса.
+
+Node.js 18 раздаёт статические файлы и выполняет роль ограниченного reverse proxy для REST API и HLS. Исходный код не публикуется; репозиторий содержит архитектурное описание, руководство и снимки работающего интерфейса.
+
+![Экран источника видеопотока](docs/images/01-source-overview.png)
 
 ## Реализованные возможности
 
@@ -55,7 +78,7 @@ flowchart LR
 | Computer Vision | OpenCV 5, YOLO, ONNX Runtime |
 | Видео | RTSP, RTP, HLS, FFmpeg, H.264 |
 | Данные и API | PostgreSQL, REST, OpenAPI, JSON, YAML |
-| Клиентские приложения | Qt 6, JavaScript |
+| Клиентское приложение | JavaScript ES Modules, HTML5 Canvas, Fetch API, hls.js, Node.js 18 |
 | Развёртывание | Windows, Ubuntu 24.04, Docker, Docker Compose |
 | Проверка | контрактные тесты, pytest, k6, профилирование FPS и latency |
 
@@ -63,6 +86,8 @@ flowchart LR
 
 - [Архитектура и потоки данных](docs/architecture.md)
 - [Функциональные возможности](docs/capabilities.md)
+- [JavaScript-клиент](docs/web-client.md)
+- [Руководство пользователя](docs/user-guide.md)
 - [Тестирование и развёртывание](docs/testing-and-deployment.md)
 - [Безопасность и границы публикации](docs/security.md)
 
@@ -74,4 +99,3 @@ flowchart LR
 
 - GitHub: [alex-kudriashov](https://github.com/alex-kudriashov)
 - Email: 79166829923@ya.ru
-
