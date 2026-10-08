@@ -25,6 +25,7 @@ flowchart LR
 
 - самостоятельный сервер C++20;
 - сервер Python с тем же REST-контрактом;
+- сервер Rust с тем же REST-контрактом и строгой моделью владения;
 - браузерный клиент, разработанный на JavaScript.
 
 Общий API и формат конфигурации позволяют использовать клиент с разными серверными реализациями.
@@ -75,6 +76,7 @@ Node.js 18 раздаёт статические файлы и выполняе�
 |---|---|
 | Сервер C++ | C++20, Clang, Drogon, CMake, vcpkg |
 | Сервер Python | Python, FastAPI, Uvicorn |
+| Сервер Rust | Rust, Axum, Tokio, sqlx, Serde, Cargo |
 | Computer Vision | OpenCV 5, YOLO, ONNX Runtime |
 | Видео | RTSP, RTP, HLS, FFmpeg, H.264 |
 | Данные и API | PostgreSQL, REST, OpenAPI, JSON, YAML |
@@ -86,6 +88,7 @@ Node.js 18 раздаёт статические файлы и выполняе�
 
 - [Архитектура и потоки данных](docs/architecture.md)
 - [Функциональные возможности](docs/capabilities.md)
+- [Сервер видеоаналитики на Rust](docs/rust-server.md)
 - [JavaScript-клиент](docs/web-client.md)
 - [Руководство пользователя](docs/user-guide.md)
 - [Тестирование и развёртывание](docs/testing-and-deployment.md)
