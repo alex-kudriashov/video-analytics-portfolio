@@ -86,6 +86,9 @@ Node.js 18 раздаёт статические файлы и выполняе�
 ## Документация
 
 - [Архитектура и потоки данных](docs/architecture.md)
+- Clang / C++: [README](docs/clang/README.md) · [Release Notes](docs/clang/ReleaseNotes.txt)
+- Rust: [README](docs/rust/README.md) · [Release Notes](docs/rust/ReleaseNotes.txt)
+- Python: [README](docs/python/README.md) · [Release Notes](docs/python/ReleaseNotes.txt)
 - [Функциональные возможности](docs/capabilities.md)
 - [Сервер видеоаналитики на Rust](docs/rust-server.md)
 - [JavaScript-клиент](docs/web-client.md)
