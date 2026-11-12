@@ -90,7 +90,6 @@ Node.js 18 раздаёт статические файлы и выполняе�
 - Rust: [README](docs/rust/README.md) · [Release Notes](docs/rust/ReleaseNotes.txt)
 - Python: [README](docs/python/README.md) · [Release Notes](docs/python/ReleaseNotes.txt)
 - [Функциональные возможности](docs/capabilities.md)
-- [Сервер видеоаналитики на Rust](docs/rust-server.md)
 - [JavaScript-клиент](docs/web-client.md)
 - [Руководство пользователя](docs/user-guide.md)
 - [Тестирование и развёртывание](docs/testing-and-deployment.md)
