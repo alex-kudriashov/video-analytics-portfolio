@@ -93,7 +93,6 @@ Node.js 18 раздаёт статические файлы и выполняе�
 - [Функциональные возможности](docs/capabilities.md)
 - [JavaScript-клиент](docs/web-client.md)
 - [Руководство пользователя](docs/user-guide.md)
-- [Тестирование и развёртывание](docs/testing-and-deployment.md)
 - [Безопасность и границы публикации](docs/security.md)
 
 ## Статус
