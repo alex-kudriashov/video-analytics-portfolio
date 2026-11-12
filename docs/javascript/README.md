@@ -26,15 +26,7 @@ HLS воспроизводится локальной копией hls.js чер
 смена разрешения не подбирают частоту автоматически.
 
 Текущая версия вьювера указана в `package.json`. История изменений вьювера
-ведётся в [Release notes](ReleaseNotes.txt). Подробное учебное описание Node.js,
-браузерного event loop, REST, JPEG/HLS и истории находится в
-[документе по архитектуре](Architecture.md). Версия для чтения и печати:
-[PDF](output/pdf/JsVideoAnalyticsViewer-Architecture.pdf). То же содержание,
-распределённое по разделам ГОСТ 19.402-78 без форматки ЕСПД:
-[описание программы](output/pdf/JsVideoAnalyticsViewer-Program-Description-GOST-19.402-78.pdf).
-Практическое руководство по работе Viewer с Clang Server, включая скриншоты,
-диапазоны параметров и цвета аналитических рамок:
-[руководство пользователя](docs/user-guide-clang/README.md).
+ведётся в [Release notes](ReleaseNotes.txt).
 
 ## Запуск
 

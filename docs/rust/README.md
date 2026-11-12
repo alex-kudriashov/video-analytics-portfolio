@@ -1,11 +1,5 @@
 # RustVideoAnalyticsServer
 
-Для читателя без опыта Rust подготовлено отдельное подробное учебное описание:
-[структура сервера, модель владения, потоки и сравнение с Clang/C++](docs/RustServerTutorial.md).
-PDF-снимок для чтения и печати (не пересобирается автоматически;
-актуальные уточнения находятся в Markdown-учебнике):
-[RustVideoAnalyticsServer-Tutorial.pdf](output/pdf/RustVideoAnalyticsServer-Tutorial.pdf).
-
 Реализация на Rust того же REST-контракта `/api/v1/*`, что и у
 `ClangVideoAnalyticsServer` и `PythonVideoAnalyticsServer`. Поэтому на него
 можно направить `JsVideoAnalyticsViewer` и запускать `tests/rest_contract.py` из

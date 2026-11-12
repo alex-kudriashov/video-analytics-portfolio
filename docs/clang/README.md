@@ -268,12 +268,6 @@ YOLO работать не будет.
 /api/v1/tracking/history?region=Вход&date=2026-08-26&time=07:00&timezoneOffset=-180&sort=time&order=asc
 ```
 
-Подробное учебное описание процессов, потоков, видеоконвейера и PostgreSQL
-находится в [документе по архитектуре](Architecture.md). Версия для чтения и
-печати: [PDF](output/pdf/ClangVideoAnalyticsServer-Architecture.pdf). То же
-содержание, распределённое по разделам ГОСТ 19.402-78 без форматки ЕСПД:
-[описание программы](output/pdf/ClangVideoAnalyticsServer-Program-Description-GOST-19.402-78.pdf).
-
 ## Проверка REST
 
 ```powershell

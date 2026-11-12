@@ -8,18 +8,7 @@ QtVideoAnalyticsServer**. OpenCV подключается через headless Py
 `cv2`.
 
 Текущая версия сервера указана в `pyproject.toml`. История изменений сервера
-ведётся в [Release notes](ReleaseNotes.txt). Подробное учебное описание
-процессов, потоков, видеоконвейера и PostgreSQL находится в
-[документе по архитектуре](Architecture.md). Версия для удобного чтения и
-печати: [PDF](output/pdf/PythonVideoAnalyticsServer-Architecture.pdf).
-
-Для читателя, который знает C++, но не знает Python, подготовлен отдельный
-[пошаговый учебник](docs/PythonServerTutorialForCpp.md): синтаксис, ссылки и
-копии, RAII и `with`, GIL, процессы, потоки, `asyncio`, NumPy и полный путь
-кадра. Оформленная версия для чтения и печати:
-[PDF-учебник](output/pdf/PythonVideoAnalyticsServer-Tutorial-for-Cpp.pdf).
-Отдельное псевдо-ГОСТ описание без рамок и основной надписи:
-[PDF по разделам ГОСТ 19.402-78](output/pdf/PythonVideoAnalyticsServer-Program-Description-GOST-19.402-78.pdf).
+ведётся в [Release notes](ReleaseNotes.txt).
 
 ## Состояние реализации
 
