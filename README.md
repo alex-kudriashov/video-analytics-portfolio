@@ -92,7 +92,6 @@ Node.js 18 раздаёт статические файлы и выполняе�
 - JavaScript Viewer: [README](docs/javascript/README.md) · [Release Notes](docs/javascript/ReleaseNotes.txt)
 - [Результаты сравнения серверов](docs/server-comparison.md)
 - [Функциональные возможности](docs/capabilities.md)
-- [JavaScript-клиент](docs/web-client.md)
 - [Руководство пользователя](docs/user-guide.md)
 - [Безопасность и границы публикации](docs/security.md)
 
